@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curso: Reparo de Placas de Vídeo (GPU)</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #0f0f13;
+    color: #e6e6e6;
+    line-height: 1.7;
+  }
+  header {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 3px solid #00d4ff;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    color: #00d4ff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(0,212,255,0.5);
+  }
+  header p { color: #a0a0b0; font-size: 1.1rem; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  .info-card {
+    background: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #00d4ff;
+  }
+  .info-card strong { color: #00d4ff; display: block; margin-bottom: 5px; }
+  h2 {
+    color: #00d4ff;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1a1a2e;
+    font-size: 1.8rem;
+  }
+  .module {
+    background: #1a1a2e;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .module:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,212,255,0.15);
+  }
+  .module h3 {
+    color: #00d4ff;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+  .module .hours {
+    display: inline-block;
+    background: #0f3460;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #00d4ff;
+    margin-left: 10px;
+  }
+  ul { list-style: none; padding-left: 0; }
+  ul li {
+    padding: 6px 0 6px 25px;
+    position: relative;
+    color: #c0c0d0;
+  }
+  ul li::before {
+    content: "▸";
+    color: #00d4ff;
+    position: absolute;
+    left: 5px;
+  }
+  .objectives {
+    background: #16213e;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #0f3460;
+  }
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #606070;
+    border-top: 1px solid #1a1a2e;
+    margin-top: 40px;
+  }
+  .badge {
+    display: inline-block;
+    background: #00d4ff;
+    color: #0f0f13;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-top: 15px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🔧 Reparo de Placas de Vídeo (GPU)</h1>
+  <p>Do Básico ao Avançado — Formação Profissional em Manutenção de GPUs</p>
+  <span class="badge">Certificado Incluído</span>
+</header>
+
+<div class="container">
+
+  <div class="info-grid">
+    <div class="info-card"><strong>Carga Horária</strong>60 a 80 horas</div>
+    <div class="info-card"><strong>Modalidade</strong>Presencial ou Híbrido</div>
+    <div class="info-card"><strong>Público-Alvo</strong>Técnicos e entusiastas</div>
+    <div class="info-card"><strong>Pré-Requisitos</strong>Eletrônica básica</div>
+  </div>
+
+  <h2>🎯 Objetivos do Curso</h2>
+  <div class="objectives">
+    <ul>
+      <li>Diagnosticar falhas em placas de vídeo (GPU)</li>
+      <li>Realizar reparos em nível de componente</li>
+      <li>Executar reballing e reflow com segurança</li>
+      <li>Identificar quando o reparo é viável economicamente</li>
+      <li>Trabalhar com ferramentas profissionais (estação de solda, microscópio, etc.)</li>
+    </ul>
+  </div>
+
+  <h2>📚 Estrutura Modular</h2>
+
+  <div class="module">
+    <h3>Módulo 1 — Introdução e Segurança <span class="hours">6h</span></h3>
+    <ul>
+      <li>Anatomia de uma placa de vídeo (PCB, GPU, VRAM, VRM, BIOS)</li>
+      <li>Diferenças entre GPUs (NVIDIA, AMD, Intel)</li>
+      <li>Eletricidade estática (ESD) e EPIs</li>
+      <li>Bancada ideal e organização</li>
+      <li>Ferramentas essenciais: multímetro, osciloscópio, estação de solda, microscópio, fonte de bancada, BGA rework station</li>
+    </ul>
+  </div>
+
+  <div class="module">
+    <h3>Módulo 2 — Diagnóstico e Leitura de Esquemas <span class="hours">10h</span></h3>
+    <ul>
+      <li>Como ler esquemas elétricos (boardview)</li>
+      <li>Identificação de componentes SMD, capacitores, MOSFETs, indutores</li>
+      <li>Medições em modo continuidade, tensão e corrente</li>
+      <li>Sintomas comuns: sem vídeo, artefatos, BSOD, não liga, superaquecimento</li>
+      <li>Softwares: GPU-Z, MATS/MODS, OCCT, FurMark</li>
+    </ul>
+  </div>
+
+  <div class="module">
+    <h3>Módulo 3 — Medições e Análise de Circuitos <span class="hours">10h</span></h3>
+    <ul>
+      <li>Linhas de tensão principais (12V, 3.3V, 1.8V, VCore, VMem)</li>
+      <li>Análise do VRM (fases de alimentação)</li>
+      <li>Verificação de curtos em GPU, VRAM e capacitores</li>
+      <li>Teste de MOSFETs, drivers e PWM</li>
+      <li>Diagnóstico de BIOS corrompida</li>
+      <li>Prática em bancada com placas doadoras</li>
+    </ul>
+  </div>
+
+  <div class="module">
+    <h3>Módulo 4 — Solda e Retrabalho <span class="hours">12h</span></h3>
+    <ul>
+      <li>Técnicas de solda SMD</li>
+      <li>Remoção e recolocação de capacitores, resistores e MOSFETs</li>
+      <li>Uso correto de fluxo, estanho e malha dessoldadora</li>
+      <li>Reflow vs. Reballing: quando aplicar cada técnica</li>
+      <li>Uso de stencil, esferas de solda e perfil térmico</li>
+      <li>Prática supervisionada em placas sucateadas</li>
+    </ul>
+  </div>
+
+  <div class="module">
+    <h3>Módulo 5 — Reparos Avançados <span class="hours">12h</span></h3>
+    <ul>
+      <li>Substituição de GPU (BGA)</li>
+      <li>Substituição de chips de memória VRAM</li>
+      <li>Reparo de trilhas rompidas e pads danificados</li>
+      <li>Regravação de BIOS (CH341A, EZP2019)</li>
+      <li>Modificações: Shunt mod, BIOS mod</li>
+      <li>Reparo de placas com danos por líquido ou superaquecimento</li>
+    </ul>
+  </div>
+
+  <div class="module">
+    <h3>Módulo 6 — Testes, Validação e Controle de Qualidade <span class="hours">6h</span></h3>
+    <ul>
+      <li>Testes de estresse (FurMark, 3DMark, OCCT)</li>
+      <li>Monitoramento de temperaturas e consumo</li>
+      <li>Garantia do serviço e ética profissional</li>
+      <li>Documentação do reparo</li>
+    </ul>
+  </div>
+
+  <div class="module">
+    <h3>Módulo 7 — Negócio e Mercado <span class="hours">4h</span></h3>
+    <ul>
+      <li>Precificação de serviços</li>
+      <li>Captação de clientes</li>
+      <li>Fornecedores de peças e placas doadoras</li>
+      <li>Viabilidade econômica do reparo</li>
+      <li>Logística reversa e garantia</li>
+    </ul>
+  </div>
+
+  <h2>🛠️ Recursos Necessários</h2>
+  <div class="module">
+    <h3>Equipamentos</h3>
+    <ul>
+      <li>Bancada com iluminação e exaustão</li>
+      <li>Estação de solda + ar quente</li>
+      <li>BGA rework station</li>
+      <li>Multímetro e osciloscópio</li>
+      <li>Microscópio e fonte de bancada</li>
+    </ul>
+  </div>
+  <div class="module">
+    <h3>Material Didático</h3>
+    <ul>
+      <li>Apostilas em PDF</li>
+      <li>Vídeos demonstrativos</li>
+      <li>Boardviews de placas comuns</li>
+      <li>Placas doadoras para prática</li>
+    </ul>
+  </div>
+
+  <h2>📝 Avaliação</h2>
+  <div class="module">
+    <ul>
+      <li><strong>Prova teórica:</strong> 30%</li>
+      <li><strong>Prática em bancada:</strong> 50%</li>
+      <li><strong>Estudo de caso real:</strong> 20%</li>
+    </ul>
+    <p style="margin-top:15px; color:#00d4ff;"><strong>Certificado:</strong> emitido ao final, com carga horária e conteúdo programático.</p>
+  </div>
+
+  <h2>💡 Dicas para o Instrutor</h2>
+  <div class="objectives">
+    <ul>
+      <li>Comece com placas antigas (GTX 600/700, HD 7000) para prática</li>
+      <li>Mantenha uma biblioteca de boardviews</li>
+      <li>Grave os procedimentos em vídeo para consulta dos alunos</li>
+      <li>Crie um grupo de estudos para troca de experiências</li>
+      <li>Atualize o conteúdo constantemente (novas arquiteturas)</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <p>© Curso de Reparo de Placas de Vídeo — Material didático profissional</p>
+  <p style="margin-top:10px; font-size:0.9rem;">Desenvolvido para formação técnica em manutenção de GPUs</p>
+</footer>
+
+</body>
+</html>
